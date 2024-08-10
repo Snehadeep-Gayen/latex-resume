@@ -60,14 +60,14 @@
 \newcommand{\myfont}[2]{\fontsize{#1}{#1}\selectfont #2}
 
 % New command for Subheading font size
-\newcommand{\subheadingfont}[1]{\myfont{11pt}{#1}}
+\newcommand{\subheadingfont}[1]{\myfont{9pt}{#1}}
 
 % New command for Project Topic name 
-\newcommand{\projecttopic}[1]{\myfont{11pt}{\textbf{#1}}}
+\newcommand{\projecttopic}[1]{\myfont{9pt}{\textbf{#1}}}
 
 % New command for Project Description
 \definecolor{projDescColor}{HTML}{1923A8}
-\newcommand{\projectdesc}[1]{\myfont{10pt}{\textcolor{projDescColor}{\textit{#1}}}}
+\newcommand{\projectdesc}[1]{\myfont{9pt}{\textcolor{projDescColor}{\textit{#1}}}}
 
 % New command for Link
 \newcommand{\mylink}[1]{\href{#1}{\includegraphics[scale=0.03]{download.png}}}
@@ -119,7 +119,7 @@
 \resheading{\subheadingfont{EDUCATION}} \\
 
 \noindent
-\projecttopic{B. Tech CSE \big \vert \hspace{3pt} CGPA 9.90} \hfill \mycal{Jul '21 - Present} \\
+\projecttopic{B. Tech CSE \big \vert \hspace{3pt} CGPA 9.94} \hfill \mycal{Jul '21 - Present} \\
 \projectdesc{Indian Institute of Technology Madras}  \hfill \myloc{Chennai, TN}\\
 
 \noindent
@@ -133,6 +133,43 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent
 \resheading{\subheadingfont{EXPERIENCE}} \\ [0.1cm]
+
+\noindent
+\hrulefill \\ [-0.5cm]
+\projecttopic{Software Internship at Optiver Amsterdam} \hfill \mycal{May'10 - Jul'10} 
+\begin{itemize}[leftmargin=\myMargin]
+    \item Worked as a part of the Quant Research \& Data Team of Optiver Delta1
+    \item Added functionality to create TCP/IP filters from session configuration files for the Network Parser and Optimized them for performance
+    \item Added functionality to convert timestamps across timezones taking DST changed into consideration
+    \item Analysed SQL queries \& designed a new OneTick database with Schema to shift an overburdened PostGres time series database.
+\end{itemize}
+\vspace{3pt}
+
+\noindent
+\hrulefill \\ [-0.5cm]
+\projecttopic{Undergraduate Research (WiFi Sensing for IoT)}
+\begin{itemize}
+    \item Created an end-to-end IoT pipeline for Human Activity Recognition using WiFi CSI Sensing
+    \item Analysed the effect of compression on CSI data and its tradeoffs on the Network Bandwidth, Energy Consumption \& Sensing Accuracy.
+    \item Submitted part of the work in AIoT workshop organised in Greece. 
+\end{itemize}
+\vspace{3pt}
+
+\noindent
+\hrulefill \\ [-0.5cm]
+\projecttopic{Undergraduate Research (Implementing Custom Protocol Headers with P4 for Networked Application Support )} 
+\begin{itemize}
+    \item Ideating \& implementation of a custom protocol header using the recent Data Plane programming language P4 on a Intel Tofino switch.
+\end{itemize}
+\vspace{3pt}
+
+\noindent
+\hrulefill \\ [-0.5cm]
+\projecttopic{Theory \& Lab Teaching Assistant for Computer System Design Course *(Ongoing)} \hfill \mycal{May'10 - Jul'10} 
+\begin{itemize}[leftmargin=\myMargin]
+    \item Designed Verilog labs for Computer Science Sophomores to test various Computer System Design topics. 
+\end{itemize}
+\vspace{3pt}
 
 \noindent
 \hrulefill \\ [-0.5cm]
@@ -176,7 +213,7 @@
 \resheading{\subheadingfont{SOFTWARE SKILLS}}
  \begin{itemize}[leftmargin=\myMargin]
     \setlength \itemsep{-0.1em}
-  \item \textbf{Languages}: C++, C, HDL (Verilog), Python, Java, HTML, CSS, x86, RISC and 8085 ASM, R
+  \item \textbf{Languages}: C++, C, HDL (Verilog), OCaml, Python, Java, Prolog, SQL, x86, MIPS and 8085 ASM, HTML \& CSS, R 
   \item \textbf{Tools}: TI CCS, Git, \textbf{\LaTeX}, AutoCAD, GDB
 \item \textbf{Libraries}: TI RTOS, NumPy, PyLops, Matplotlib
   \end{itemize}
@@ -188,17 +225,10 @@
 \resheading{\subheadingfont{EXTRACURRICULAR ACTIVITIES}}
 \begin{itemize}[leftmargin=\myMargin]
     \setlength \itemsep{-0.08em}
-\item \textbf{Sports:} \vspace{-0.35cm}
-    \begin{multicols}{2}
-        \begin{itemize}[noitemsep,nolistsep,leftmargin=\myMargin]
-        \item Taekwondo Red-II Belt
-        \item NSO Athlete at IITM
-        \item School Sports Captain 2018-2019
-        % \item Awarded 13 medals in various Track \& Field events
-        \item Awarded Best Athlete U14 and 13 medals in Track \& Field events
-      \end{itemize}
-    \end{multicols}
-    \vspace{-9pt}
+\item \textbf{Sports:} 
+    School Sports Captain for 2018-19, \\
+    Awarded 13 medals in various Track \& Field events and Best Athlete U14 in High School \\
+    Taekwondo Red Dan II Belt, NSO Athlete at IITM
 \item Mentored freshmen, personally and academically, under \textbf{Saathi, IIT Madras}
 \item Avid book reader and Tabla player
 \end{itemize}
@@ -213,7 +243,8 @@
 \noindent
 \resheading{\subheadingfont{SCHOLASTIC ACHIEVEMENTS}}
 \begin{itemize}[leftmargin=\myMargin]
-\setlength \itemsep{-0.2em}
+\setlength \itemsep{-0.1em}
+\item Awarded Sri V Ramachandran Prize for \textbf{Highest CGPA} in Semesters 3 \& 4 of B.Tech and Dual Degree in Computer Science 
 \item Secured \textbf{AIR 5} in JEE Mains out of 1 million students  %\hfill {[20XX]}%
 \item Secured \textbf{AIR 161} in JEE Advanced \hfill
 \item Secured \textbf{AIR 10} in Indian Statistical Institute Exam
@@ -227,15 +258,44 @@
 \noindent
 \resheading{\subheadingfont{PROJECTS} }\\[0.1cm]
 
+
+
 \noindent
 \hrulefill \\ [-0.5cm]
-\projecttopic{WiFi Tomography} \textit{\myfont{9pt}{(Ongoing)}} \hfill \textcolor{projDescColor}{\textit{Python}}  \\[0.1cm]
-\projectdesc{Project Under Prof. Ayon Chakraborty} \hfill \mycal{May'23 - Present} 
+\projecttopic{Java Compiler Design }
+\mylink{insert link here}
+\hfill    \textcolor{projDescColor}{\textit{Java, C}}  \\[0.1cm]
+\projectdesc{CS3300 Course Project - Prof. Krishna Nandivada} \hfill \mycal{Jan-May '23} \\
+\noindent
 \begin{itemize}[leftmargin=\myMargin]
-    \item WiFi tomography is a low-cost and easily implementable method to image the environment using WiFi signals.
-    \item Working on computational optimisation of Tomographic Reconstruction to make it suitable for outdoor
-        and indoor drone application 
-\end{itemize} 
+    \item Implemented a fully functional compiler for a subset of Java with Lexical Analyser, Parsing, Type Checking, IR Generation, Register Allocation, Stack Handling, and MIPS code generation
+\end{itemize}
+\vspace{5pt}
+
+
+\noindent
+\hrulefill \\ [-0.5cm]
+\projecttopic{MMU with LRU replacement}
+\mylink{insert link here}
+\hfill    \textcolor{projDescColor}{\textit{Java}}  \\[0.1cm]
+\projectdesc{CS3500 Course Project - Prof. Prashant LA} \hfill \mycal{Jan-May '23} \\
+\noindent
+\begin{itemize}[leftmargin=\myMargin]
+    \item Implemented a Memory Management Unit with LRU Page replacement Policy
+\end{itemize}
+\vspace{5pt}
+
+
+\noindent
+\hrulefill \\ [-0.5cm]
+\mylink{insert link here}
+\projecttopic{Multi-Level Feedback Queue Scheduler}
+\hfill    \textcolor{projDescColor}{\textit{Java}}  \\[0.1cm]
+\projectdesc{CS3500 Course Project - Prof. Prashant LA} \hfill \mycal{Jan-May '23} \\
+\noindent
+\begin{itemize}[leftmargin=\myMargin]
+    \item Implemented a Multi-Level Feedback Queue Scheduler for processes
+\end{itemize}
 \vspace{5pt}
 
 \noindent
@@ -247,7 +307,7 @@
 \projectdesc{CS2310 Course Project - Prof. Ayon Chakraborty} \hfill \mycal{Jul-Nov '22}
 \noindent
 \begin{itemize}[leftmargin=\myMargin]
-    \item Implemented a CPU with register file and ALU with instructions to perform Arithmetic 
+    \item Implemented a CPU with \textbf{Register file} and \textbf{ALU} with instructions to perform Arithmetic 
     and Logical operations on both 8-bit integers and  12-bit floating-point numbers
     \item Built a combinational 8-bit CPU from gate level
 \end{itemize}
