@@ -1,5 +1,5 @@
 \documentclass[10pt,article]{article}
-\newcommand{\myMargin}{0.2in}
+\newcommand{\myMargin}{0.15in}
 \usepackage[a4paper, margin=\myMargin]{geometry}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -73,18 +73,19 @@
 \newcommand{\mylink}[1]{\href{#1}{\includegraphics[scale=0.03]{download.png}}}
 
 % New command for Calendar
-\newcommand{\mycal}[1]{\includegraphics[scale=0.018]{calendar.png} \myfont{10}{#1}}
+\newcommand{\mycal}[1]{\includegraphics[scale=0.018]{calendar.png} \myfont{9}{#1}}
 
 % New command for Location
-\newcommand{\myloc}[1]{\includegraphics[scale=0.7]{loc.png} \myfont{10}{#1}}
+\newcommand{\myloc}[1]{\includegraphics[scale=0.7]{loc.png} \myfont{9}{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+\vspace{-0.1cm}
 \begin{table}
     \begin{minipage}{0\linewidth}
         \centering
-        \includegraphics[height =1in]{Logo.png}
+        \includegraphics[height=0.9in]{Logo.png}
     \end{minipage}
     \begin{minipage}{0.9\linewidth}
         %\centering
@@ -95,24 +96,20 @@
             \multirow{3}{*}{     {\href{https://github.com/Snehadeep-Gayen}{\includegraphics[scale=0.05]{github.png}} \ 
  \href{https://www.linkedin.com/in/snehadeep-gayen/}{\includegraphics[scale=0.05]{linkedin.png}} \ \href{https://codeforces.com/profile/Snehadeep}{\includegraphics[scale=0.06]{cf.png} \ } 
             }}
-            % &  {\href{https://github.com/Snehadeep-Gayen}{\includegraphics[scale=0.03]{github.png}} \  Snehadeep-Gayen} 
             \\
-            \textbf{B. Tech Computer Science and Engineering} 
+            \textbf{B. Tech Computer Science and Engineering}
+            \\
+            {\textit{Minor in Mathematics}} 
             \\
             {Indian Institute of Technology, Madras} 
-            % &    {\href{https://codeforces.com/profile/Snehadeep}{\includegraphics[scale=0.04]{cf.png}} \ Snehadeep} 
             \\
         \end{tabular}
     \end{minipage}\hfill
 \end{table}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\unskip
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{multicols*}{2}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent
@@ -136,38 +133,13 @@
 
 \noindent
 \hrulefill \\ [-0.5cm]
-\projecttopic{Software Internship at Optiver Amsterdam} \hfill \mycal{May'10 - Jul'10} 
+\projecttopic{Software Internship at Optiver Amsterdam} \hfill \mycal{May'24 - Jul'24} 
 \begin{itemize}[leftmargin=\myMargin]
-    \item Worked as a part of the Quant Research \& Data Team of Optiver Delta1
-    \item Added functionality to create TCP/IP filters from session configuration files for the Network Parser and Optimized them for performance
-    \item Added functionality to convert timestamps across timezones taking DST changed into consideration
-    \item Analysed SQL queries \& designed a new OneTick database with Schema to shift an overburdened PostGres time series database.
-\end{itemize}
-\vspace{3pt}
-
-\noindent
-\hrulefill \\ [-0.5cm]
-\projecttopic{Undergraduate Research (WiFi Sensing for IoT)}
-\begin{itemize}
-    \item Created an end-to-end IoT pipeline for Human Activity Recognition using WiFi CSI Sensing
-    \item Analysed the effect of compression on CSI data and its tradeoffs on the Network Bandwidth, Energy Consumption \& Sensing Accuracy.
-    \item Submitted part of the work in AIoT workshop organised in Greece. 
-\end{itemize}
-\vspace{3pt}
-
-\noindent
-\hrulefill \\ [-0.5cm]
-\projecttopic{Undergraduate Research (Implementing Custom Protocol Headers with P4 for Networked Application Support )} 
-\begin{itemize}
-    \item Ideating \& implementation of a custom protocol header using the recent Data Plane programming language P4 on a Intel Tofino switch.
-\end{itemize}
-\vspace{3pt}
-
-\noindent
-\hrulefill \\ [-0.5cm]
-\projecttopic{Theory \& Lab Teaching Assistant for Computer System Design Course *(Ongoing)} \hfill \mycal{May'10 - Jul'10} 
-\begin{itemize}[leftmargin=\myMargin]
-    \item Designed Verilog labs for Computer Science Sophomores to test various Computer System Design topics. 
+    \setlength \itemsep{-0.1em}
+    \item Worked in the Quant Research \& Data Team of Optiver Delta1
+    \item Added functionality to create TCP/IP filters from session configuration files for the Network Parser and optimised them for performance.
+    \item Added functionality to convert timestamps across timezones, accounting for Daylight Saving Time changes 
+    \item Analysed SQL queries and designed a new OneTick database with Schema to replace a saturated PostGres time series database.
 \end{itemize}
 \vspace{3pt}
 
@@ -175,69 +147,75 @@
 \hrulefill \\ [-0.5cm]
 \projecttopic{Team Avishkar Hyperloop, C\textcolor{red}{FI}} \hfill \mycal{Oct '22 - Present} 
 \begin{itemize}[leftmargin=\myMargin]
-    \item Part of Code Development Team of the \textbf{Main Control Unit} and \textbf{Navigation Unit} of our Pod. 
-    \item Used \textbf{RTOS, threading} and communication protocols like MQTT, CAN, etc. to collect and store data from over 20 sensors at \textbf{low latency}, \textbf{handling faults} appropriately.
+    \setlength \itemsep{-0.1em}
+    \item Part of Embedded Software Team of the \textbf{Main Control Unit} and \\ \textbf{Navigation Unit} of our Hyperloop Pod. 
+    \item Used \textbf{RTOS, threading} and communication protocols like MQTT, CAN, etc. to collect and store data from over 20 sensors at \textbf{low latency}, \textbf{handling errors} appropriately.
     % \item Used communication protocols like MQTT, CAN, etc to collect data and send data to the base station/on-Pod Storage.
     \item Participated in the prestigious \textbf{European Hyperloop Week - Scotland 2023}, 
     among over 25 teams globally to represent the country.
 \end{itemize}
 \vspace{3pt}
+
+\noindent
+\hrulefill \\ [-0.5cm]
+\projecttopic{Undergraduate Research - WiFi Sensing for IoT} \hfill  \mycal{Jan'24 - May'24}
+\begin{itemize}[leftmargin=\myMargin]
+    \setlength \itemsep{-0.1em}
+    \item Created an end-to-end IoT pipeline for Human Activity Recognition using WiFi CSI (Channel State Information) Sensing
+    \item Analysed the effect of compression on CSI data and its tradeoffs on the Network Bandwidth, Energy Consumption \& Sensing Accuracy.
+    \item Submitted part of the work in AIoT workshop organised in Greece. 
+\end{itemize}
+\noindent
+\projecttopic{Undergraduate Research - Custom Protocol Headers with P4 \\ for Network Application Support} \hfill \mycal{Ongoing}
+\vspace{1pt}
+\hrule 
+\begin{itemize}[leftmargin=\myMargin]
+    \setlength \itemsep{-0.1em}
+    \item Ideation of a custom protocol header to improve network telemetry or security using P4 switch data plane programming language.
+    \item Implementation with be done on Intel Tofino switches  
+\end{itemize}
+\vspace{3pt}
+
 \noindent
 \hrulefill \\ [-0.5cm]
 \projecttopic{Tutor \& Contributor, \textcolor{nptel}{NPTEL}} \hfill \mycal{March '23 - Present}
 \begin{itemize}[leftmargin=\myMargin]
+    \setlength \itemsep{-0.1em}
     \item Created \textbf{YouTube tutorials} for previous years' GATE CS questions
     \item These tutorials aim to support applicants who may have limited access to resources
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent
-\resheading{\subheadingfont{CODING ACHIEVEMENTS}}
- \begin{itemize}[ leftmargin=\myMargin]
-    \setlength \itemsep{-0.1em}
-  \item Maximum Rating 1678 \textcolor{blue}{(Expert)} on Codeforces
-%   \item Maximum Rating 1653 \textcolor{blue}{(3 \includegraphics[scale=0.03]{bluestar.png})} on CodeChef
-  \item \textbf{ICPC 2022} - \textbf{AIR 151} and \textbf{Institute Rank 7} in Kanpur-Mathura Qualifier Round
-\item \textbf{AIR 3} in Shaastra CP Potpourri (Mixed-bag coding contest) \\ \small {\textit{[Shaastra is Asia's largest student-run Techfest]}} 
-    \item \normalsize{ \textbf{Global Rank 9} in CodeChef Starters 96} 
-    \item \normalsize{ \textbf{Global Rank 231} in Codeforces Round 881} 
-    \item \normalsize{ \textbf{Global Rank 373} in Google Farewell Round B} 
-    \item  \normalsize {1st place in Inter-School Java Competition in Mumbai}
-  \end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
  
 \noindent
 \resheading{\subheadingfont{SOFTWARE SKILLS}}
+\vspace{-0.4cm}
  \begin{itemize}[leftmargin=\myMargin]
     \setlength \itemsep{-0.1em}
   \item \textbf{Languages}: C++, C, HDL (Verilog), OCaml, Python, Java, Prolog, SQL, x86, MIPS and 8085 ASM, HTML \& CSS, R 
   \item \textbf{Tools}: TI CCS, Git, \textbf{\LaTeX}, AutoCAD, GDB
 \item \textbf{Libraries}: TI RTOS, NumPy, PyLops, Matplotlib
+\vspace{-0.2cm}
   \end{itemize}
   
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{-0.1cm}
 \noindent
 \resheading{\subheadingfont{EXTRACURRICULAR ACTIVITIES}}
 \begin{itemize}[leftmargin=\myMargin]
-    \setlength \itemsep{-0.08em}
+    \setlength \itemsep{-0.1em}
 \item \textbf{Sports:} 
-    School Sports Captain for 2018-19, \\
-    Awarded 13 medals in various Track \& Field events and Best Athlete U14 in High School \\
-    Taekwondo Red Dan II Belt, NSO Athlete at IITM
+    Awarded 13 medals in various Track \& Field events and Best Athlete U14 in High School, Taekwondo Red Dan II Belt, NSO Athlete at IITM
 \item Mentored freshmen, personally and academically, under \textbf{Saathi, IIT Madras}
-\item Avid book reader and Tabla player
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \columnbreak
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent
@@ -250,8 +228,23 @@
 \item Secured \textbf{AIR 10} in Indian Statistical Institute Exam
 \item Secured \textbf{AIR 21} in INChO and attended Orientation Camp for International Chemistry Olympiad
 \item Awarded KVPY Fellowship '21 with \textbf{AIR 338}
-\item Winner of Mimamsa '22 at IISER Pune \\ 4$^{th}$ place in Chemenigma '22 at IISC Bangalore \& \\ Won Silver Medal in Homi Bhabha Science Competition \\ (conducted in Maharashtra)
+\item Winner of Mimamsa '22 at IISER Pune $\vert$ 4$^{th}$ place in Chemenigma '22 at IISC Bangalore $\vert$ Won Silver Medal in Homi Bhabha Science Competition (conducted in Maharashtra)
 \end{itemize} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\noindent
+%\resheading{\subheadingfont{CODING ACHIEVEMENTS}}
+% \begin{itemize}[ leftmargin=\myMargin]
+%    \setlength \itemsep{-0.1em}
+%  \item Rating 1806 \textcolor{blue}{Expert} on Codeforces
+%%   \item Maximum Rating 1653 \textcolor{blue}{(3 \includegraphics[scale=0.03]{bluestar.png})} on CodeChef
+%  \item \textbf{ICPC 2022} - \textbf{AIR 151} and \textbf{Institute Rank 7} in Kanpur-Mathura Qualifier Round
+%\item \textbf{AIR 3} in Shaastra CP Potpourri (Mixed-bag coding contest) \\ \small {\textit{[Shaastra is Asia's largest student-run Techfest]}} 
+%    \item \normalsize{ \textbf{Global Rank 9} in CodeChef Starters 96} 
+%    \item \normalsize{ \textbf{Global Rank 231} in Codeforces Round 881} 
+%    \item \normalsize{ \textbf{Global Rank 373} in Google Farewell Round B} 
+%    \item  \normalsize {1st place in Inter-School Java Competition in Mumbai}
+%  \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
@@ -310,16 +303,6 @@
     \item Implemented a CPU with \textbf{Register file} and \textbf{ALU} with instructions to perform Arithmetic 
     and Logical operations on both 8-bit integers and  12-bit floating-point numbers
     \item Built a combinational 8-bit CPU from gate level
-\end{itemize}
-\vspace{5pt}
-
-\noindent
-\hrulefill \\ [-0.5cm]
-\projecttopic{Reading Project and Presentation} \mylink{https://docs.google.com/presentation/d/11JGNKZnVHHQ-aGJLIgkdXcnK5qy_xisO/edit?usp=sharing&ouid=111499804735475673896&rtpof=true&sd=true} \\ [0.1cm]
-\projectdesc{CS6122 Course Project - Prof. B. V. R. Rao} \hfill \mycal{Jan-May '23} 
-\begin{itemize}[leftmargin=\myMargin]
-    \item Presented the paper on \href{https://doi.org/10.1007/s00453-012-9643-5}{\textit{``Smoothed Analysis of Partitioning Algorithms for Euclidean Functionals"} 
-    by \textit{Bläser, M., Manthey, B. \& Rao, B.V.R.}} and discussed its applications
 \end{itemize}
 \vspace{5pt}
 
