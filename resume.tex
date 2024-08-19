@@ -1,6 +1,6 @@
-\documentclass[10pt,article]{article}
+\documentclass[article]{article}
 \newcommand{\myMargin}{0.15in}
-\usepackage[a4paper, margin=\myMargin]{geometry}
+\usepackage[margin=5pt]{geometry}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{url}
@@ -20,10 +20,7 @@
 \selectfont
 
 \usepackage[T1]{fontenc}
-\usepackage
-%[ansinew]
-[utf8]
-{inputenc}
+\usepackage[utf8]{inputenc}
 
 \usepackage{color}
 % \definecolor{myblue}{gray}{0.82}
@@ -31,7 +28,8 @@
 \definecolor{myred}{HTML}{961212}
 \definecolor{nptel}{HTML}{c71254}
 \textheight=10.75in
-\raggedbottom
+% \raggedbottom
+\flushbottom
 
 \setlength{\tabcolsep}{0in}
 \newcommand{\isep}{-2 pt}
@@ -60,10 +58,10 @@
 \newcommand{\myfont}[2]{\fontsize{#1}{#1}\selectfont #2}
 
 % New command for Subheading font size
-\newcommand{\subheadingfont}[1]{\myfont{9pt}{#1}}
+\newcommand{\subheadingfont}[1]{\myfont{10pt}{#1}}
 
 % New command for Project Topic name 
-\newcommand{\projecttopic}[1]{\myfont{9pt}{\textbf{#1}}}
+\newcommand{\projecttopic}[1]{\myfont{10pt}{\textbf{#1}}}
 
 % New command for Project Description
 \definecolor{projDescColor}{HTML}{1923A8}
@@ -82,30 +80,26 @@
 
 \begin{document}
 \vspace{-0.1cm}
-\begin{table}
-    \begin{minipage}{0\linewidth}
-        \centering
-        \includegraphics[height=0.9in]{Logo.png}
-    \end{minipage}
-    \begin{minipage}{0.9\linewidth}
-        %\centering
-        \setlength{\tabcolsep}{70pt}
-        \def\arraystretch{1.1}
-        \begin{tabular}{l l r}
-            \textbf{\Large{Snehadeep Gayen $\vert$ CS21B078}} &
-            \multirow{3}{*}{     {\href{https://github.com/Snehadeep-Gayen}{\includegraphics[scale=0.05]{github.png}} \ 
- \href{https://www.linkedin.com/in/snehadeep-gayen/}{\includegraphics[scale=0.05]{linkedin.png}} \ \href{https://codeforces.com/profile/Snehadeep}{\includegraphics[scale=0.06]{cf.png} \ } 
-            }}
-            \\
-            \textbf{B. Tech Computer Science and Engineering with Honors}
-            \\
-            {\textbf{\textit{Minor in Mathematics}}} 
-            \\
-            {Indian Institute of Technology, Madras} 
-            \\
-        \end{tabular}
-    \end{minipage}\hfill
-\end{table}
+\begin{minipage}{0\linewidth}
+    \centering
+    \includegraphics[height=0.9in]{Logo.png}
+\end{minipage}
+\begin{minipage}{0.9\linewidth}
+    %\centering
+    \setlength{\tabcolsep}{30pt}
+    % \def\arraystretch{1.1}
+    \begin{tabular}{l l l}
+        & \textbf{\Large{Snehadeep Gayen $\vert$ CS21B078}} &
+        \multirow{3}{*}{     {\href{https://github.com/Snehadeep-Gayen}{\includegraphics[scale=0.05]{github.png}} \ 
+\href{https://www.linkedin.com/in/snehadeep-gayen/}{\includegraphics[scale=0.05]{linkedin.png}} \ \href{https://codeforces.com/profile/Snehadeep}{\includegraphics[scale=0.06]{cf.png} \ } 
+        }}
+        \\
+        & \myfont{12}{\textbf{B. Tech (Hons.) Computer Science and Engineering}}
+        \\
+        & {\textbf{\textit{Minor in Mathematics}}} 
+        \\
+    \end{tabular}
+\end{minipage}\hfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \unskip
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -123,7 +117,7 @@
 \vspace{-0.2cm} \\
 
 \noindent
-\projecttopic{HSC Class 12$^{\mathbf{th}}$ \big \vert \hspace{3pt} 98.17\%} \hfill \mycal{Apr '20 - Apr '21}
+\projecttopic{HSC Class 12$^{\mathbf{th}}$ \big \vert \hspace{3pt} 98.17\%} \hfill \mycal{Apr '19 - Apr '21}
 \vspace{-0.1cm} \\
 \projectdesc{Pace Junior Science College}  \hfill \myloc{Mumbai, MH}
 \vspace{-0.2cm} \\
@@ -139,44 +133,44 @@
 \resheading{\subheadingfont{EXPERIENCE}} \\ [0.1cm]
 
 \noindent
-\hrulefill \\ [-0.5cm]
+\hrulefill \\ [-0.45cm]
 \projecttopic{Software Internship at Optiver Amsterdam} \hfill \mycal{May'24 - Jul'24} 
 \begin{itemize}[leftmargin=\myMargin]
-    \setlength \itemsep{-0.1em}
-    \item Worked in the Quant Research \& Data Team of Optiver Delta1
+    \setlength \itemsep{-0.2em}
+    \item Worked in the Quant Research Data Team of Optiver Delta1
     \item Added functionality to create TCP/IP filters from session configuration files for packet parsers and optimised them for performance.
     \item Added functionality to convert timestamps across timezones, accounting for Daylight Saving Time changes 
-    \item Analysed SQL queries and designed a new OneTick database with Schema to replace a saturated PostGres time series database.
+    \item Analysed SQL queries and designed a new OneTick database with Schema to replace a saturated postgres time series database.
 \end{itemize}
 \vspace{3pt}
 
 \noindent
-\hrulefill \\ [-0.5cm]
-\projecttopic{Team Avishkar Hyperloop, C\textcolor{red}{FI}} \hfill \mycal{Oct '22 - Jul'23} 
+\hrulefill \\ [-0.45cm]
+\projecttopic{Avishkar Hyperloop, Student Team, C\textcolor{red}{FI}} \hfill \mycal{Oct '22 - Jul'23} 
 \begin{itemize}[leftmargin=\myMargin]
-    \setlength \itemsep{-0.1em}
+    \setlength \itemsep{-0.2em}
     \item Part of Embedded Software Team of the \textbf{Main Control Unit} and \\ \textbf{Navigation Unit} of our Hyperloop Pod. 
     \item Used \textbf{RTOS} to collect and store data from over 20 sensors using various communication protocols at \textbf{low latency}.
     \item Demonstrated our Hyperloop Pod in the prestigious \textbf{European Hyperloop Week - Scotland 2023} 
-    among over 25 teams globally, and were runner-ups in the Best Sense and Control System award.
+    among over 25 teams globally, and were awarded runner-up in the Best Sense and Control System category.
 \end{itemize}
 \vspace{3pt}
 
 
 \noindent
-\hrulefill \\ [-0.5cm]
+\hrulefill \\ [-0.45cm]
 \projecttopic{Teaching Assistant, CSE Dept, IIT Madras} \hfill \mycal{Aug '24 - Present} 
 \begin{itemize}[leftmargin=\myMargin]
-    \setlength \itemsep{-0.1em}
+    \setlength \itemsep{-0.2em}
     \item Worked as a Teaching Assistant and designed Verilog labs for Computer System Design course under Dr. Sutanu Chakraborty
 \end{itemize}
 \vspace{5pt}
 
 \noindent
-\hrulefill \\ [-0.5cm]
-\projecttopic{Tutor \& Contributor, \textcolor{nptel}{NPTEL}} \hfill \mycal{March '23 - Present}
+\hrulefill \\ [-0.45cm]
+\projecttopic{Tutor \& Contributor, \textcolor{nptel}{NPTEL}} \hfill \mycal{March '23 - Jun '23}
 \begin{itemize}[leftmargin=\myMargin]
-    \setlength \itemsep{-0.1em}
+    \setlength \itemsep{-0.2em}
     \item Created \textbf{YouTube tutorials} for previous years' GATE CS questions
     \item These tutorials aim to support applicants who may have limited access to resources
 \end{itemize}
@@ -187,12 +181,11 @@
 \small
  \begin{itemize}[ leftmargin=\myMargin]
     \setlength \itemsep{-0.2em}
-  \item Rating 1806 \textcolor{blue}{Expert} on Codeforces
+  \item \textbf{Rating 1806} \textcolor{blue}{Expert} on Codeforces
 %   \item Maximum Rating 1653 \textcolor{blue}{(3 \includegraphics[scale=0.03]{bluestar.png})} on CodeChef
   \item \textbf{ICPC 2022} - \textbf{AIR 151} and \textbf{Institute Rank 7} in Kanpur Qualifiers
 \item \textbf{AIR 3} in Shaastra CP Potpourri (Mixed-bag coding contest) \\ \small {\textit{[Shaastra is Asia's largest student-run Techfest]}} 
-    \item { \textbf{Global Rank 9} in CodeChef Starters 96} 
-    \item { \textbf{Global Rank 231} in Codeforces Round 881} 
+    \item { \textbf{Global Rank 9} in CodeChef Starters 96} $\vert$ { \textbf{Global Rank 231} in Codeforces Round 881} $\vert$ \textbf{Rank 2} in Republic Day Contest '24 and \textbf{Rank 3} in Endgame Contest organised by Programming Club, IITM 
     \item {1st place in Inter-School Java Competition in Mumbai}
   \end{itemize}
 
@@ -202,7 +195,7 @@
 \resheading{\subheadingfont{KEY COURSES \& LABS}}
 \begin{multicols}{2} 
     \vspace{-0.2cm}
-    \scriptsize
+    \footnotesize
 \begin{itemize}[ leftmargin=\myMargin]
     \setlength \itemsep{-0.2em}
     \item  Computer System Design
@@ -214,18 +207,17 @@
     \item Operating Systems
     \item Functional \& Logical Programming
     \item Computer Networks
-    \item Pattern Recognition \& Machine Learning
+    \item Patterns \& Machine Learning
     \item Router Architecture \& Algorithms $\dagger *$ 
     \item Principles of Economics
-    \item Microeconomics $*$
-    \item Macroeconomics $*$
+    \item Microeconomics, Macroeconomics $*$
     \item Introduction to Game Theory
     \item Probability Theory $\dagger$ 
     \item Combinatorics $\dagger$
-    \item Linear Programming and Combinatorial Optimisation $\dagger$ 
-    \item Linear Algebra $\dagger$ 
-    \item $\dagger$ - Graduate Level Course
-    \item * - Ongoing
+    \item Linear Programs \& Optimisation $\dagger$ 
+    \item Linear Algebra $\dagger$ \\
+    \noindent
+     $\dagger$ - Graduate Level Course \\ $*$ - Ongoing
 \end{itemize}
 \end{multicols}
 
@@ -235,7 +227,7 @@
 \resheading{\subheadingfont{SOFTWARE SKILLS}}
 \vspace{-0.35cm}
  \begin{itemize}[leftmargin=\myMargin]
-    \setlength \itemsep{-0.1em}
+    \setlength \itemsep{-0.2em}
   \item \textbf{Languages}: C++, C, HDL (Verilog), OCaml, Python, Java, Prolog, SQL, x86, MIPS and 8085 ASM, \LaTeX, HTML \& CSS, R,
   \item \textbf{Tools}: CMake, Make, git, gdb/lldb, TI CCS, AutoCAD, GTKWave 
 \item \textbf{Libraries}: TI RTOS, NumPy, PyLops, Matplotlib
@@ -245,6 +237,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vfill\null
+% \columnbreak
 \columnbreak
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -262,25 +257,25 @@
 \end{itemize} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    
+
 \noindent
-\resheading{\subheadingfont{PROJECTS} }\\[0.1cm]
+\resheading{\subheadingfont{RESEARCH} }\\[0.1cm]
 
 \noindent
 \hrulefill \\ [-0.45cm]
 \projecttopic{WiFi Sensing for IoT using Machine Learning} \hfill \textcolor{projDescColor}{\textit{C, Python}} \\ [0.1cm]
-\projectdesc{Undergraduate Research Project under Prof. Ayon Chakraborty}
+\projectdesc{Undergraduate Research under Prof. Ayon Chakraborty}
 \begin{itemize}[leftmargin=\myMargin]
     \setlength \itemsep{-0.1em}
     \item Created an end-to-end IoT pipeline for real-time Human Activity Recognition using WiFi CSI (Channel State Information) Sensing and Machine Learning on the Server
     \item Analysed the effect of compression on CSI data and its tradeoffs on the Network Bandwidth, Energy Consumption \& Sensing Accuracy.
-    \item Submitted part of the work in \textbf{AIoT workshop organised in Athens, Greece.} 
+    \item This work has been accepted in \textbf{\href[]{https://www.aiot-workshop.site/}{AIoT workshop at MobiHoc '24} organised in Athens, Greece.} 
 \end{itemize}
 \vspace{3pt} 
 \noindent
 \hrulefill \\ [-0.45cm]
-\projecttopic{Custom Protocol Headers for Network Support} \textit{*Ongoing} \hfill \textcolor{projDescColor}{\textit{P4, Python}}\\[0.1cm]
-\projectdesc{Undergraduate Research Project under Prof. Krishna Moorthy Sivalingam}
+\projecttopic{Custom Protocol Headers for Network Support}   \hfill \textcolor{projDescColor}{\textit{P4, Python}}\\[0.1cm]
+\projectdesc{Undergraduate Research under Prof. Krishna Moorthy Sivalingam} \hfill \textit{*Ongoing}
 \vspace{1pt}
 \begin{itemize}[leftmargin=\myMargin]
     \setlength \itemsep{-0.1em}
@@ -290,11 +285,14 @@
 \vspace{3pt}
 
 \noindent
+\resheading{\subheadingfont{PROJECTS} }\\[0.1cm]
+
+\noindent
 \hrulefill \\ [-0.45cm]
 \projecttopic{Java Compiler Design}
 \mylink{https://github.com/Snehadeep-Gayen/Compiler-Design-HW}
-\hfill    \textcolor{projDescColor}{\textit{Java, C}}  \\[0.1cm]
-\projectdesc{CS3300 Course Project - Prof. Krishna Nandivada} \hfill \mycal{Jan-May '23} \\
+\hfill    \textcolor{projDescColor}{\textit{Java, C}}  \\[0.05cm]
+\projectdesc{CS3300 Course Project - Prof. Krishna Nandivada} \hfill \mycal{Jul-Nov '23} \\
 \noindent
 \vspace{-0.4cm}
 \begin{itemize}[leftmargin=\myMargin]
@@ -306,8 +304,8 @@
 \hrulefill \\ [-0.45cm]
 \projecttopic{OS Scheduler and Memory Management Unit Design}
 \mylink{https://github.com/Snehadeep-Gayen/OS_CS3500}
-\hfill    \textcolor{projDescColor}{\textit{Java}}  \\[0.1cm]
-\projectdesc{CS3500 Course Project - Prof. Prashant LA} \hfill \mycal{Jan-May '23} \\
+\hfill    \textcolor{projDescColor}{\textit{Java}}  \\[0.05cm]
+\projectdesc{CS3500 Course Project - Prof. Prashant LA} \hfill \mycal{Jul-Nov '23} \\
 \noindent
 \vspace{-0.4cm}
 \begin{itemize}[leftmargin=\myMargin]
@@ -321,8 +319,8 @@
 \hrulefill \\ [-0.45cm]
 \projecttopic{LAN Chat Server \& Music Streaming}
 \mylink{https://github.com/Snehadeep-Gayen/Networks-Assignments/tree/main/a2}
-\hfill    \textcolor{projDescColor}{\textit{C}}  \\[0.1cm]
-\projectdesc{CS3205 Course Project - Prof. Ayon Chakraborty} \hfill \mycal{Jan-May '23} \\
+\hfill    \textcolor{projDescColor}{\textit{C}}  \\[0.05cm]
+\projectdesc{CS3205 Course Project - Prof. Ayon Chakraborty} \hfill \mycal{Jan-May '24} \\
 \noindent
 \vspace{-0.4cm}
 \begin{itemize}[leftmargin=\myMargin]
@@ -336,11 +334,11 @@
 \hrulefill \\ [-0.45cm]
 \projecttopic{CPU Design} \mylink{https://github.com/Snehadeep-Gayen/Computer-Organisation-and-Architecture-Lab} 
 \mylink{https://github.com/Snehadeep-Gayen/Simple_CPU_Design} 
-\hfill    \textcolor{projDescColor}{\textit{Verilog}}  \\[0.1cm]
-\projectdesc{CS2610 Course Project - Prof. C. Chandra Sekhar} \hfill \mycal{Jan-May '23} \\
+\hfill    \textcolor{projDescColor}{\textit{Verilog}}  \\[0.05cm]
+\projectdesc{CS2610 Course Project - Prof. C. Chandra Sekhar} \hfill \mycal{Jan-May '23} \\ [-0.01cm]
 \projectdesc{CS2310 Course Project - Prof. Ayon Chakraborty} \hfill \mycal{Jul-Nov '22}
 \noindent
-\vspace{-0.1cm}
+\vspace{-0.05cm}
 \begin{itemize}[leftmargin=\myMargin]
     \setlength \itemsep{-0.2em}
     \item Implemented a CPU with \textbf{Register file} and \textbf{ALU} with instructions to perform Arithmetic 
@@ -352,7 +350,7 @@
 \noindent
 \hrulefill \\ [-0.45cm]
 \projecttopic{Closeness Centrality Algorithm} \mylink{https://github.com/Snehadeep-Gayen/CENDY-Incremental-CC}
- \hfill \textcolor{projDescColor}{\textit{C++}} \\ [0.1cm]
+ \hfill \textcolor{projDescColor}{\textit{C++}} \\ [0.05cm]
 \projectdesc{Project under Prof. Manikandan Narayanan} \hfill \mycal{May-Jun '23}
 \vspace{-0.1cm}
 \begin{itemize}[leftmargin=\myMargin]
@@ -369,6 +367,9 @@
 \item Mentored incoming freshmen under \textbf{Saathi, IIT Madras}
 \end{itemize}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vfill\null
 \end{multicols*}
 \end{document}
