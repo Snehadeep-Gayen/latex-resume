@@ -140,7 +140,7 @@
     \item Worked in the Quant Research Data Team of Optiver Delta1
     \item Added functionality to create TCP/IP filters from session configuration files for packet parsers and optimised them for performance.
     \item Added functionality to convert timestamps across timezones, accounting for Daylight Saving Time changes 
-    \item Analysed SQL queries and designed a new OneTick database with Schema to replace a saturated postgres time series database.
+    \item Replaces a saturated Postgres database with a OneTick database, optimising the schema based on past SQL queries to minimise query time.
 \end{itemize}
 \vspace{3pt}
 
@@ -150,9 +150,9 @@
 \begin{itemize}[leftmargin=\myMargin]
     \setlength \itemsep{-0.2em}
     \item Part of Embedded Software Team of the \textbf{Main Control Unit} and \\ \textbf{Navigation Unit} of our Hyperloop Pod. 
-    \item Used \textbf{RTOS} to collect and store data from over 20 sensors using various communication protocols at \textbf{low latency}.
+    \item Used \textbf{RTOS} to collect and store data from \textbf{over 20 sensors} using various communication protocols at \textbf{low latency}.
     \item Demonstrated our Hyperloop Pod in the prestigious \textbf{European Hyperloop Week - Scotland 2023} 
-    among over 25 teams globally, and were awarded runner-up in the Best Sense and Control System category.
+    among over 25 teams globally, and were \textbf{awarded runner-up in the Best Sense and Control System} category.
 \end{itemize}
 \vspace{3pt}
 
@@ -228,9 +228,9 @@
 \vspace{-0.35cm}
  \begin{itemize}[leftmargin=\myMargin]
     \setlength \itemsep{-0.2em}
-  \item \textbf{Languages}: C++, C, HDL (Verilog), OCaml, Python, Java, Prolog, SQL, x86, MIPS and 8085 ASM, \LaTeX, HTML \& CSS, R,
+  \item \textbf{Languages}: C++, C, HDL (Verilog), OCaml, Python, Java, Prolog, SQL, x86, MIPS and 8085 ASM, \LaTeX, HTML \& CSS, R
   \item \textbf{Tools}: CMake, Make, git, gdb/lldb, TI CCS, AutoCAD, GTKWave 
-\item \textbf{Libraries}: TI RTOS, NumPy, PyLops, Matplotlib
+\item \textbf{Libraries}: TI RTOS, Boost, Xerces, ESP32 libraries, Python libraries
   \end{itemize}
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -279,7 +279,7 @@
 \vspace{1pt}
 \begin{itemize}[leftmargin=\myMargin]
     \setlength \itemsep{-0.1em}
-    \item Ideation of a custom protocol header to improve network telemetry or security using P4 switch data plane programming language.
+    \item Ideating on a custom protocol header to improve network telemetry or security using P4 switch data plane programming language.
     \item Deployment \& Testing on Intel Tofino switches  
 \end{itemize}
 \vspace{3pt}
@@ -296,7 +296,8 @@
 \noindent
 \vspace{-0.4cm}
 \begin{itemize}[leftmargin=\myMargin]
-    \item Designed a MIPS compiler for a subset of Java with Lexical Analyser, Parsing, Type Checking, IR Generation, Register Allocation, Stack Handling, and MIPS code generation
+    \item Developed a \textbf{5 stage} compiler, from a \textbf{subset of Java to MIPS} Assembly.
+    \item Used JavaCC and Java Tree Builder to implement lexical analysis, type-checking, semantic analysis, IR translation and register allocation.
 \end{itemize}
 \vspace{5pt}
 
@@ -310,14 +311,13 @@
 \vspace{-0.4cm}
 \begin{itemize}[leftmargin=\myMargin]
     \setlength \itemsep{-0.2em}
-    \item Developed a Multi-Level Feedback Queue for OS process scheduling.
-    \item Designed and implemented a Memory Management Unit with an LRU page replacement policy.
+    \item Developed a Multi-Level Feedback Queue process scheduler and a Memory Management Unit with an LRU page replacement policy.
 \end{itemize}
 \vspace{5pt}
 
 \noindent
 \hrulefill \\ [-0.45cm]
-\projecttopic{LAN Chat Server \& Music Streaming}
+\projecttopic{LAN Chatroom, Music Streaming \& HTTP Server}
 \mylink{https://github.com/Snehadeep-Gayen/Networks-Assignments/tree/main/a2}
 \hfill    \textcolor{projDescColor}{\textit{C}}  \\[0.05cm]
 \projectdesc{CS3205 Course Project - Prof. Ayon Chakraborty} \hfill \mycal{Jan-May '24} \\
@@ -325,8 +325,9 @@
 \vspace{-0.4cm}
 \begin{itemize}[leftmargin=\myMargin]
     \setlength \itemsep{-0.2em}
-    \item Built a LAN Chat Server from scratch using only C Socket API
-    \item Developed a Music Streaming Server and Client using C Socket API and Unix ALSA Library 
+    \item Developed a LAN Chatroom Server scratch using only Unix Sockets 
+    \item Built a Music Streaming server and client using Unix sockets and ALSA. 
+    \item Developed a simple multithreaded HTTP Server capable of serving files and handling GET and POST requests
 \end{itemize}
 \vspace{5pt}
 
